@@ -1,8 +1,11 @@
 const ACTIVECLASS='active';
 const IMAGES=document.querySelectorAll('.slider');
+
+
 IMAGES[0].classList.add(ACTIVECLASS);
+
 function removeActiveClass(){
-    const elm=document.querySelector('.${ACTIVECLASS}');
+    const elm = document.querySelector(`.${ACTIVECLASS}`);
     if(elm){
         elm.classList.remove(ACTIVECLASS);
     }
@@ -15,6 +18,6 @@ function addClass($event){
     target.classList.add(ACTIVECLASS);
 }
 
-IMAGES.forEcach(image => {
+IMAGES.forEach(image => {
     image.addEventListener('click' ,addClass);
 });

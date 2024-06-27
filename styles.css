@@ -9,12 +9,11 @@ body{
 }
 .wrapper{
     position:relative;
-    height:100vh;
+    height: 100vh;
 
 }
 header{
-    width:70%;
-    border:1px solid red;
+    width:100%;
     margin:0 auto;
     display:flex;
     align-items:center;
@@ -26,14 +25,14 @@ header ul{
     align-items:center;
     justify-content:space-around;
 }
-/* header ul li{ */
-    /* margin:0 .6rem; */
-/* } */
+header ul li{
+    margin:0 .6rem;
+}
 header ul li a{
     text-decoration: none;
-     /* letter-spacing: 1px; */
+    letter-spacing: 1px;
     font-size: 20px;
-    padding: 15px 10px;
+    padding: 15px 20px;
     border-radius: 20px;
     transition: all ease .3s;
 }
@@ -50,21 +49,22 @@ header ul li a.btn:hover{
     color:#25509e;
     background-color: #c1d7ff;
 }
+
+/*Submenu*/
 .submenu{
     max-width:200px;
     position:absolute;
     background-color:#fff;
     border-radius: 10px;
-    box-shadow: -2px 2px 3px #333;
+    box-shadow: -2px 2px 3px rgb(143, 106, 106);
     padding-left:0;
     margin-top:15px;
     opacity:0;
     transition:all ease .5s;
     z-index: 1;
-    display:block;
-
+    display: block;
 }
-ul li:hover.submenu{
+ul li:hover .submenu{
     opacity: 1;
     margin: 20px 0;
 }
@@ -90,7 +90,8 @@ ul li:hover.submenu{
 }
 /* slider */
 #home{
-    height:650px;
+    height:880px;
+    border:1px solid  white;
     background-color: #ebebeb;
 }
 .slide-wrapper{
@@ -105,10 +106,10 @@ ul li:hover.submenu{
     top:50px;
 }
 .slider{
-    margin: 10px;
+    margin-right: 10px;
     height: 100%;
     width: 10%;
-    border-radius:60;
+    border-radius:60px;
     cursor:pointer;
     position: relative;
     overflow: hidden;
@@ -118,14 +119,15 @@ ul li:hover.submenu{
     background-repeat: no-repeat;
 }
 .slider.active{
-    width: 500;
+    width: 50%;
     border-radius: 50%;
     animation: move-down 1.5s ease-in infinite alternate-reverse;
 }
 @keyframes move-down{
     from{
         transform: translateY(-15px);
-    }to{
+    }
+    to{
         transform: translateY(0);
     }
 }
