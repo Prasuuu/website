@@ -90,7 +90,7 @@ ul li:hover .submenu{
 }
 /* slider */
 #home{
-    height:880px;
+    
     border:1px solid  white;
     background-color: #ebebeb;
 }
@@ -114,7 +114,8 @@ ul li:hover .submenu{
     position: relative;
     overflow: hidden;
     transition: all ease-in-out 400ms;
-    background-position: center center;
+    background-position
+    : center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -122,6 +123,9 @@ ul li:hover .submenu{
     width: 50%;
     border-radius: 50%;
     animation: move-down 1.5s ease-in infinite alternate-reverse;
+}
+.content-wrapper{
+    margin-top: 75px;
 }
 @keyframes move-down{
     from{
@@ -132,17 +136,38 @@ ul li:hover .submenu{
     }
 }
 .pic-1{
-    background-image:url('../Documents/blacky.jpg');
+    background-image:url('../beagle.jpg');
 }
 .pic-2{
-    background-image:url('../Documents/chocky.jpg');
+    background-image:url('../chocky.jpg');
 }
 .pic-3{
-    background-image:url('../Documents/golden.jpeg');
+    background-image:url('../golden.jpeg');
 }
 .pic-4{
-    background-image:url('../Documents/pug.jpg');
+    background-image:url('../pug.jpg');
 }
 .pic-5{
-    background-image:url('../Documents/shitzu.jpg');
+    background-image:url('../shitzu.jpg');
+}
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    bottom: 0;
+    width: 100%;
+}
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #f2f2f2;
 }
